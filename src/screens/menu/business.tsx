@@ -38,7 +38,7 @@ function Content(): JSX.Element {
     const { theme } = useSelector((state: ReduxState) => state.theme)
     const { lang } = useSelector((state: ReduxState) => state.lang)
     const info = lang ? no.companies : en.companies
-    const isDark = theme === 0 || theme === 2 || theme === 3 ? true : false
+    const isDark = theme === 0 || theme === 2 || theme === 3 || theme == 6 ? true : false
 
     const logo = {
         bedpres: isDark

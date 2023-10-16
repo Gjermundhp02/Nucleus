@@ -7,14 +7,14 @@ export const ThemeSlice = createSlice({
     // Initial state of the slice
     initialState: {
         // Default 0 (dark theme)
-        theme: 0
+        theme: 6
     },
     // Declares reducers
     reducers: {
         // Function to change theme
         changeTheme: (state) => {
             // Increments state.theme by 1
-            state.theme += 1
+            state.theme = (state.theme + 1)%7
         },
         // Function to reset theme
         resetTheme: (state) => {

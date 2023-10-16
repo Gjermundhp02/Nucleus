@@ -15,13 +15,14 @@ export default function ThemeSwitch() {
 
       return (
         <View style={{maxHeight: 40, justifyContent: "center"}}>
-            <TouchableOpacity onPress={() => theme > 2 ? dispatch(resetTheme()) : dispatch(changeTheme())}>
+            <TouchableOpacity onPress={() => dispatch(changeTheme())}>
             {theme === 0 ? <Image style={SS.lightSwitchImage} source={require("@assets/themes/sun.png")} />: null}
             {theme === 1 ? <Image style={SS.lightSwitchImage} source={require("@assets/themes/abyss.png")} />: null}
             {theme === 2 ? <Image style={SS.lightSwitchImage} source={require("@assets/themes/sunset.png")} />: null}
-            {/* {theme === 3 ? <Image style={SS.lightSwitchImage} source={require("@assets/themes/christmas.png")} />: null} */}
-            {/* {theme === 4 ? <Image style={SS.lightSwitchImage} source={require("@assets/themes/easter.png")} />: null} */}
+            {theme === 4 ? <Image style={SS.lightSwitchImage} source={require("@assets/themes/christmas.png")} />: null}
+            {theme === 5 ? <Image style={SS.lightSwitchImage} source={require("@assets/themes/easter.png")} />: null}
             {theme === 3 ? <Image style={SS.lightSwitchImage} source={require("@assets/themes/moon.png")} />: null}
+            {theme === 4 ? <Image style={SS.lightSwitchImage} source={require("@assets/themes/moon.png")} />: null}
             </TouchableOpacity>
         </View>
     )

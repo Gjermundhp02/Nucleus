@@ -48,7 +48,7 @@ EventCardLocationProps): JSX.Element {
             <View style = {{...ES.title}}>
                 <Text style={{
                     ...ES.title, 
-                    color: FetchColor({theme, variable: "TEXTCOLOR"})
+                    color: FetchColor({theme, variable: "TITLETEXTCOLOR"})
                 }}>
                     {item.eventname.trim()}
                 </Text>

@@ -1,4 +1,4 @@
-import { DARK, LIGHT, ABYSS, SUNSET, CHRISTMAS, EASTER } from "@styles/themes.json"
+import { DARK, LIGHT, ABYSS, SUNSET, CHRISTMAS, EASTER, HALLOWEEN } from "@styles/themes.json"
 
 type ColorProps = {
     theme: number
@@ -117,6 +117,24 @@ export default function FetchColor({ theme, variable }: ColorProps): string {
                 case "SWITCHOFFSTATE":          return EASTER.SWITCHOFFSTATE
                 case "TRACKCOLOR":              return EASTER.TRACKCOLOR
                 case "TRACKBACKGROUNDCOLOR":    return EASTER.TRACKBACKGROUNDCOLOR
+                default:                        return "red"
+            }
+        case 6:
+            switch (variable){
+                case "BACKGROUND":              return HALLOWEEN.BACKGROUND
+                case "DARKER":                  return HALLOWEEN.DARKER
+                case "TRANSPARENT":             return HALLOWEEN.TRANSPARENT
+                case "TRANSPARENTANDROID":      return HALLOWEEN.TRANSPARENTANDROID
+                case "CONTRAST":                return HALLOWEEN.CONTRAST
+                case "ORANGE":                  return HALLOWEEN.ORANGE
+                case "DISCORD":                 return HALLOWEEN.DISCORD
+                case "TEXTCOLOR":               return HALLOWEEN.TEXTCOLOR
+                case "OPPOSITETEXTCOLOR":       return HALLOWEEN.OPPOSITETEXTCOLOR
+                case "TITLETEXTCOLOR":          return HALLOWEEN.TITLETEXTCOLOR
+                case "SWITCHONSTATE":           return HALLOWEEN.SWITCHONSTATE
+                case "SWITCHOFFSTATE":          return HALLOWEEN.SWITCHOFFSTATE
+                case "TRACKCOLOR":              return HALLOWEEN.TRACKCOLOR
+                case "TRACKBACKGROUNDCOLOR":    return HALLOWEEN.TRACKBACKGROUNDCOLOR
                 default:                        return "red"
             }
 

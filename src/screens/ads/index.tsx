@@ -52,7 +52,7 @@ export default function AdScreen({ navigation }: ScreenProps): JSX.Element {
     const { calendarID } = useSelector( (state: ReduxState) => state.misc)
     const dispatch = useDispatch()
     function eventPage () {navigation.navigate("EventScreen")}
-    const isDark = theme === 0 || theme === 2 || theme === 3 ? true : false
+    const isDark = theme === 0 || theme === 2 || theme === 3 || theme === 6? true : false
 
     // --- SET THE COMPONENTS OF THE HEADER ---
     useEffect(()=>{

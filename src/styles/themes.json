@@ -101,5 +101,23 @@
         "SWITCHOFFSTATE":         "#ffe66b",
         "TRACKCOLOR":           "#FFFFE020",
         "TRACKBACKGROUNDCOLOR": "#FFFFE010"
+    },
+    "HALLOWEEN":{
+        "OLDBACKGROUND":          "#101010",
+        "OLDDARKER":              "#131313",
+        "BACKGROUND":             "#181818",
+        "DARKER":                    "#111", 
+        "TRANSPARENT":          "#000000B3", 
+        "TRANSPARENTANDROID":   "#090909B3",
+        "CONTRAST":                  "#222",
+        "ORANGE":                 "#fd8738",
+        "DISCORD":                "#6471fa",
+        "TEXTCOLOR":                "white",
+        "OPPOSITETEXTCOLOR":         "#5E32BA",
+        "TITLETEXTCOLOR":            "#fd8738",
+        "SWITCHONSTATE":          "#321c66", 
+        "SWITCHOFFSTATE":         "#5E32BA", 
+        "TRACKCOLOR":             "#181818",
+        "TRACKBACKGROUNDCOLOR":   "#080808"
     }
 }

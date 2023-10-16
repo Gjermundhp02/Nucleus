@@ -79,7 +79,7 @@ export default function EventScreen({ navigation }: ScreenProps): JSX.Element {
     const { login } =       useSelector( (state: ReduxState) => state.login)
     const { theme } =       useSelector( (state: ReduxState) => state.theme)
     const { calendarID } =  useSelector( (state: ReduxState) => state.misc)
-    const isDark = theme === 0 || theme === 2 || theme === 3 ? true : false
+    const isDark = theme === 0 || theme === 2 || theme === 3 || theme === 6 ? true : false
     const dispatch = useDispatch()
 
     // Navigates if the app is opened by a push notification
