@@ -200,12 +200,12 @@ export function FullCategorySquare({item, height}: FullCategorySquareProps) {
 
             <Text style={{
                 ...ES.eventCardDayText,
-                color: FetchColor({theme, variable: "TEXTCOLOR"})
+                color: 'white'
             }}>{day}</Text>
 
             <Month
                 month={month}
-                color={FetchColor({theme, variable: "TEXTCOLOR"})}
+                color={'white'}
             />
         </View>
     )

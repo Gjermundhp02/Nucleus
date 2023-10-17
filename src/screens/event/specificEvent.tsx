@@ -157,19 +157,18 @@ BottomTabScreenProps<EventStackParamList>): JSX.Element {
                         <CategorySquare category={item.category} />
                         <Text style={{
                             ...ES.eventCardDayText, 
-                            color: FetchColor({theme, variable: "TEXTCOLOR"})
+                            color: 'white'
                         }}>
                             {item.startt[8]}
                             {item.startt[9]}
                         </Text>
 
                         <Text style={{
-                            ...ES.monthText, 
-                            color: FetchColor({theme, variable: "TEXTCOLOR"})
+                            ...ES.monthText
                         }}>
                         <Month
                             month={parseInt(item.startt[5] + item.startt[6])}
-                            color={FetchColor({theme, variable: "TEXTCOLOR"})}
+                            color={'white'}
                         />
                         </Text>
                         </View>
@@ -343,7 +342,7 @@ function JoinButton({link, updateStorage}: JoinButtonProps) {
                 }}>
                     <Text style={{
                         ...T.centered20, 
-                        color: FetchColor({theme, variable: "TEXTCOLOR"})
+                        color: FetchColor({theme, variable: "OPPOSITETEXTCOLOR"})
                     }}>
                         {lang ? "Meld meg på":"Join event"}
                     </Text>

@@ -1,4 +1,4 @@
-{
+export default {
     "DARK": {
         "OLDBACKGROUND":          "#101010",
         "OLDDARKER":              "#131313",
@@ -112,8 +112,8 @@
         "CONTRAST":                  "#222",
         "ORANGE":                 "#fd8738",
         "DISCORD":                "#6471fa",
-        "TEXTCOLOR":                "white",
-        "OPPOSITETEXTCOLOR":         "#5E32BA",
+        "TEXTCOLOR":                "#fd8738",
+        "OPPOSITETEXTCOLOR":         "#999",
         "TITLETEXTCOLOR":            "#fd8738",
         "SWITCHONSTATE":          "#321c66", 
         "SWITCHOFFSTATE":         "#5E32BA", 
